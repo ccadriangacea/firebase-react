@@ -1,0 +1,5 @@
+# Ignore Markdown Files
+*.md
+
+tsconfig.json
+/src/vendor/**/*

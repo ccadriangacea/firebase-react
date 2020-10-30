@@ -1,0 +1,2 @@
+# Ignore preliminary pre-built polyfill code for address-widget
+src/vendor/**/* 

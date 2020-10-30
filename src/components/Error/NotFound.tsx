@@ -1,0 +1,50 @@
+import { Grid, makeStyles, Theme, Typography } from "@material-ui/core";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import { routes } from "../../app/routes";
+
+const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    padding: theme.spacing(4),
+  },
+  content: {
+    paddingTop: 150,
+    textAlign: "center",
+  },
+  link: {
+    paddingTop: 50,
+    textAlign: "center",
+  },
+  image: {
+    marginTop: 50,
+    display: "inline-block",
+    maxWidth: "100%",
+    width: 560,
+  },
+}));
+
+export const NotFound: React.FC = () => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <Grid container justify="center" spacing={2}>
+        <Grid item lg={6} xs={12}>
+          <div className={classes.content}>
+            <Typography variant="h1">404: The page you are looking for isn’t here</Typography>
+            <Typography variant="subtitle2">
+              You either tried some shady route or you came here by mistake. Whichever it is, try using the navigation
+            </Typography>
+            <img alt="Under development" className={classes.image} src="/images/404.svg" />
+          </div>
+          <div className={classes.link}>
+            <Typography variant="subtitle1">
+              <Link to={routes.landing.path}>Go back to start</Link>
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+    </div>
+  );
+};

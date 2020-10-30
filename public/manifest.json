@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "short_name": "React Firebase UI",
+  "name": "React Firebase UI as easy template",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +21,6 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
