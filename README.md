@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Experiments with React, Redux and co. on GCP with Firebase Auth, Hosting (and Functions)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
